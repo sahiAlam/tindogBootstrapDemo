@@ -30,7 +30,7 @@ p {
     color: #fff;
 }
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 .title_btn {
     padding: 1rem 2rem;
@@ -46,6 +46,9 @@ p {
     font-family: 'Ubuntu', sans-serif;
     font-size: 3.2rem;
     font-weight: 500;
+}
+.navbar-brand:hover {
+    color: #fff;
 }
 .nav-item {
     margin: 0 1.8rem;
@@ -68,11 +71,16 @@ p {
 .title_image {
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 28%;
 }
 
 /* Features */
 #features {
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 111;
 }
 
 .feature_box {
@@ -138,4 +146,56 @@ p {
 }
 .pricing_btn {
     font-size: 1.8rem;
+}
+
+/* Call to action area  */
+#cta {
+    padding: 4% 15%;
+    background: #ff4c68;
+    text-align: center;
+}
+.cta_heading {
+    font-size: 4.8rem;
+    color: #fff;
+    padding: 0 10%;
+    line-height: 1.5;
+}
+
+/* footer */
+#footer {
+    padding: 5% 15%;
+    text-align: center;
+    background-color: #fff;
+}
+.footer_social_icon {
+    margin: 2.5rem 0.4rem;
+    font-size: 1.4rem;
+    display: inline-block;
+    background: #000;
+    padding: 1rem;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* Media */
+@media (max-width: 1030px) {
+    html {
+        font-size: 50.5%;
+    }
+    #title {
+        text-align: center;
+    }
+    .title_image {
+        transform: rotate(0deg);
+        position: static;
+        margin: 10% auto 4%;
+        display: block;
+        width: 40%;
+    }
+    .tiitle_text {
+        padding-top: 3%;
+    }
 }
