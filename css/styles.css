@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5.2rem;
+    line-height: 1.5;
+    font-weight: 800;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #8f8f8f;
+}
+#title {
+    background: #ff4c68;
+    color: #fff;
+}
+.container-fluid {
+    padding: 3% 15%;
+}
+.title_btn {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+}
+
+/* Navigation Bar  */
+.navbar {
+    padding: 0 0 6.5rem;
+}
+.navbar-brand {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+.nav-item {
+    margin: 0 1.8rem;
+}
+.nav-link {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #eee;
+}
+.nav-link:hover{
+    color: #fff;
+}
+
+/* Download Buttons */
+.download_btn {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title image  */
+.title_image {
+    width: 60%;
+    transform: rotate(25deg);
+}
+
+/* Features */
+#features {
+    padding: 7% 15%;
+}
+
+.feature_box {
+    text-align: center;
+    padding: 5%;
+}
+.feature_icon {
+    color: #ef8172;
+    margin-bottom: 1.5rem;
+}
+.feature_icon:hover {
+    color: #ff4c68;
+}
+
+/* Testimonials */
+#testimonials {
+    background: #ef8172;
+    text-align: center;
+}
+.testimonial_heading {
+    font-size: 4.8rem;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #fff;
+} 
+.testimonial_img {
+    width: 10%;
+    border-radius: 50%;
+    margin: 2rem;
+}
+#testimonials em {
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 1.5;
+}
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* Press */
+#press {
+    text-align: center;
+    background: #ef8172;
+    padding-bottom: 3%;
+}
+.press_img {
+    width: 15%;
+    margin: 1rem 2rem 5rem;
+}
+
+/* Pricing */
+#pricing {
+    padding: 5%;
+    text-align: center;
+}
+#pricing h2{
+    font-size: 4.8rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+.pricing_col {
+    padding: 3% 2%;
+}
+.pricing_btn {
+    font-size: 1.8rem;
+}
