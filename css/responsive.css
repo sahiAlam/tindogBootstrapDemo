@@ -3,6 +3,9 @@
     html {
         font-size: 58.5%;
     }
+    p {
+        font-size: 1.5rem;
+    }
     #title {
         text-align: center;
     }
@@ -20,6 +23,10 @@
         background: var(--color-dark-white);
         border-radius: 2rem;
         margin-top: 3%;
+        padding: 5%;
+    }
+    .navbar-brand {
+        font-size: 4rem;
     }
     .nav-link {
         color: var(--color-black);
@@ -27,12 +34,17 @@
         margin: 0.5rem 0;
         font-size: 3rem;
     }
-    .navbar-toggler {
-        padding: 1rem 1.5rem;
-        background-color: transparent;
-        border: 2px solid var(--color-white);
+    .navbar_toggle_icon {
+        color: var(--color-white);
+        font-size: 4rem;
+    }
+    button:focus {
+        outline: none;
     }
     .testimonial_heading {
         font-size: 4rem;
     } 
+    .navbar-toggler {
+        border: none;
+    }
 }
