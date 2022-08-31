@@ -177,7 +177,16 @@ p {
     color: #fff;
     cursor: pointer;
 }
+.footer_social_icon:hover {
+    background: #ff4c68;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
 
+
+.scroll_to_top_btn {
+    display: block;
+}
 
 /* Media */
 @media (max-width: 1030px) {
@@ -197,4 +206,23 @@ p {
     .tiitle_text {
         padding-top: 3%;
     }
+    .navbar-nav {
+        background: #eee;
+        padding: 5% 30%;
+        border-radius: 2rem;
+        margin-top: 3%;
+    }
+    .nav-link {
+        color: #000;
+        font-weight: 600;
+        margin: 0.5rem 0;
+    }
+    .navbar-toggler {
+        padding: 1rem 1.5rem;
+        background-color: transparent;
+        border: 2px solid #fff;
+    }
+    .testimonial_heading {
+        font-size: 4.2rem;
+    } 
 }
