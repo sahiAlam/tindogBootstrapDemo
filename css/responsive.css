@@ -1,0 +1,38 @@
+/* Media */
+@media (max-width: 1030px) {
+    html {
+        font-size: 58.5%;
+    }
+    #title {
+        text-align: center;
+    }
+    .title_image {
+        transform: rotate(0deg);
+        position: static;
+        margin: 10% auto 4%;
+        display: block;
+        width: 40%;
+    }
+    .tiitle_text {
+        padding-top: 3%;
+    }
+    .navbar-nav {
+        background: var(--color-dark-white);
+        border-radius: 2rem;
+        margin-top: 3%;
+    }
+    .nav-link {
+        color: var(--color-black);
+        font-weight: 600;
+        margin: 0.5rem 0;
+        font-size: 3rem;
+    }
+    .navbar-toggler {
+        padding: 1rem 1.5rem;
+        background-color: transparent;
+        border: 2px solid var(--color-white);
+    }
+    .testimonial_heading {
+        font-size: 4rem;
+    } 
+}

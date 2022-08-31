@@ -24,10 +24,12 @@
     ></script>
     <!-- main css  -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- responsive css  -->
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
 
   <body>
-    <section id="title">
+    <section class="colored_section" id="title">
       <div class="container-fluid">
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg">
@@ -90,22 +92,24 @@
 
     <!-- Features -->
 
-    <section id="features">
-      <div class="row">
-        <div class="feature_box col-lg-4">
-          <i class="feature_icon fa-solid fa-circle-check fa-5x"></i>
-          <h3>Easy to use.</h3>
-          <p>So easy to use, even your dog could do it.</p>
-        </div>
-        <div class="feature_box col-lg-4">
-          <i class="feature_icon fa-solid fa-bullseye fa-5x"></i>
-          <h3>Elite Clientele</h3>
-          <p>We have all the dogs, the greatest dogs.</p>
-        </div>
-        <div class="feature_box col-lg-4">
-          <i class="feature_icon fa-solid fa-heart fa-5x"></i>
-          <h3>Guaranteed to work.</h3>
-          <p>Find the love of your dog's life or your money back.</p>
+    <section class="white_section" id="features">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="feature_box col-lg-4">
+            <i class="feature_icon fa-solid fa-circle-check fa-5x"></i>
+            <h3>Easy to use.</h3>
+            <p>So easy to use, even your dog could do it.</p>
+          </div>
+          <div class="feature_box col-lg-4">
+            <i class="feature_icon fa-solid fa-bullseye fa-5x"></i>
+            <h3>Elite Clientele</h3>
+            <p>We have all the dogs, the greatest dogs.</p>
+          </div>
+          <div class="feature_box col-lg-4">
+            <i class="feature_icon fa-solid fa-heart fa-5x"></i>
+            <h3>Guaranteed to work.</h3>
+            <p>Find the love of your dog's life or your money back.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -116,6 +120,7 @@
       <div id="testimonialControl" class="carousel slide" data-ride="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <div class="container-fluid">
             <h2 class="testimonial_heading">
               I no longer have to sniff other dogs for love. I've found the
               hottest Corgi on TinDog. Woof.
@@ -127,7 +132,9 @@
             />
             <em>Pebbles, New York</em>
           </div>
+        </div>
           <div class="carousel-item">
+            <div class="container-fluid">
             <h2 class="testimonial_heading">
               My dog used to be so lonely, but with TinDog's help, they've found
               the love of their life. I think.
@@ -138,6 +145,7 @@
               alt="lady-profile"
             />
             <em>Beverly, Illinois</em>
+          </div>
           </div>
         </div>
         <a
@@ -161,7 +169,7 @@
 
     <!-- Press -->
 
-    <section id="press">
+    <section class="colored_section" id="press">
       <img class="press_img" src="images/tech-crunch.png" alt="tc-logo" />
       <img class="press_img" src="images/tnw.png" alt="tnw-logo" />
       <img
@@ -174,7 +182,7 @@
 
     <!-- Pricing -->
 
-    <section id="pricing">
+    <section class="white_section" id="pricing">
       <h2>A Plan for Every Dog's Needs</h2>
       <p>Simple and affordable price plans for your and your dog.</p>
 
@@ -189,7 +197,12 @@
               <p>5 Matches Per Day</p>
               <p>10 Messages Per Day</p>
               <p>Unlimited App Usage</p>
-              <button class="pricing_btn btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+              <button
+                class="pricing_btn btn btn-lg btn-block btn-outline-dark"
+                type="button"
+              >
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
@@ -203,7 +216,12 @@
               <p>Unlimited Matches</p>
               <p>Unlimited Messages</p>
               <p>Unlimited App Usage</p>
-              <button class="pricing_btn btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+              <button
+                class="pricing_btn btn btn-lg btn-block btn-dark"
+                type="button"
+              >
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
@@ -218,7 +236,12 @@
               <p>Unlimited Matches</p>
               <p>Unlimited Messages</p>
               <p>Unlimited App Usage</p>
-              <button class="pricing_btn btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+              <button
+                class="pricing_btn btn btn-lg btn-block btn-dark"
+                type="button"
+              >
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
@@ -227,35 +250,39 @@
 
     <!-- Call to Action -->
 
-    <section id="cta">
-      <h3 class="cta_heading">Find the True Love of Your Dog's Life Today.</h3>
-      <button
-      type="button"
-      class="btn title_btn btn-dark btn-lg download_btn"
-    >
-      <i class="fa-brands fa-apple"></i> Download
-    </button>
-    <button
-      type="button"
-      class="btn title_btn btn-light btn-lg download_btn"
-    >
-      <i class="fa-brands fa-google-play"></i> Download
-    </button>
+    <section class="colored_section" id="cta">
+      <div class="container-fluid">
+        <h3 class="cta_heading">
+          Find the True Love of Your Dog's Life Today.
+        </h3>
+        <button
+          type="button"
+          class="btn title_btn btn-dark btn-lg download_btn"
+        >
+          <i class="fa-brands fa-apple"></i> Download
+        </button>
+        <button
+          type="button"
+          class="btn title_btn btn-light btn-lg download_btn"
+        >
+          <i class="fa-brands fa-google-play"></i> Download
+        </button>
+      </div>
     </section>
-
-    <!-- Sroll to top  -->
-      <a href="#title"><i class="fa-solid fa-up-to-line"></i></a>
-
 
     <!-- Footer -->
 
-    <footer id="footer">
-      <a href="#"><i class="footer_social_icon fa-brands fa-twitter"></i></a>
-      <a href="#"><i class="footer_social_icon fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="footer_social_icon fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="footer_social_icon fa-brands fa-linkedin"></i></a>
-      <a href="#"><i class="footer_social_icon fa-solid fa-envelope"></i></a>
-      <p>© Copyright TinDog</p>
+    <footer class="white_section" id="footer">
+      <div class="container-fluid">
+        <a href="#"><i class="footer_social_icon fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="footer_social_icon fa-brands fa-facebook"></i></a>
+        <a href="#"
+          ><i class="footer_social_icon fa-brands fa-instagram"></i
+        ></a>
+        <a href="#"><i class="footer_social_icon fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="footer_social_icon fa-solid fa-envelope"></i></a>
+        <p>© Copyright TinDog</p>
+      </div>
     </footer>
 
     <!-- JS link  -->

@@ -3,33 +3,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --color-primary: #ff4c68;
+    --color-secondary: #ef8172;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-dark-white: #eee;
+    --para-color: #8f8f8f;
+}
 html {
     font-size: 62.5%;
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 h1 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 5.2rem;
     line-height: 1.5;
     font-weight: 800;
 }
 h3 {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 2.2rem;
+    color: var(--color-black);
 }
 p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.5;
-    color: #8f8f8f;
+    color: var(--para-color);
 }
-#title {
-    background: #ff4c68;
-    color: #fff;
-}
+/* container  */
 .container-fluid {
+    padding: 7% 15%;
+}
+
+/* section */
+.colored_section {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.white_section {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+/* Title area  */
+#title {
+    text-align: left;
+    color: var();
+}
+#title .container-fluid {
     padding: 3% 15% 7%;
 }
 .title_btn {
@@ -42,13 +67,13 @@ p {
     padding: 0 0 6.5rem;
 }
 .navbar-brand {
-    color: #fff;
+    color: var(--color-white);
     font-family: 'Ubuntu', sans-serif;
     font-size: 3.2rem;
     font-weight: 500;
 }
 .navbar-brand:hover {
-    color: #fff;
+    color: var(--color-white);
 }
 .nav-item {
     margin: 0 1.8rem;
@@ -56,13 +81,13 @@ p {
 .nav-link {
     font-size: 1.8rem;
     font-weight: 300;
-    color: #eee;
+    color: var(--color-dark-white);
 }
 .nav-link:hover{
-    color: #fff;
+    color: var(--color-white);
 }
 
-/* Download Buttons */
+/* Title Download Buttons */
 .download_btn {
     margin: 5% 3% 5% 0;
 }
@@ -77,34 +102,30 @@ p {
 
 /* Features */
 #features {
-    padding: 7% 15%;
-    background-color: #fff;
     position: relative;
     z-index: 111;
 }
 
 .feature_box {
-    text-align: center;
     padding: 5%;
 }
 .feature_icon {
-    color: #ef8172;
+    color: var(--color-secondary);
     margin-bottom: 1.5rem;
 }
 .feature_icon:hover {
-    color: #ff4c68;
+    color: var(--color-primary);
 }
 
 /* Testimonials */
 #testimonials {
-    background: #ef8172;
-    text-align: center;
+    background: var(--color-secondary);
 }
 .testimonial_heading {
     font-size: 4.8rem;
     line-height: 1.5;
     font-weight: 800;
-    color: #fff;
+    color: var(--color-white);
 } 
 .testimonial_img {
     width: 10%;
@@ -113,28 +134,26 @@ p {
 }
 #testimonials em {
     font-size: 1.4rem;
-    color: #fff;
+    color: var(--color-white);
     line-height: 1.5;
-}
-.carousel-item {
-    padding: 7% 15%;
 }
 
 /* Press */
 #press {
-    text-align: center;
-    background: #ef8172;
+    background: var(--color-secondary);
     padding-bottom: 3%;
 }
 .press_img {
     width: 15%;
     margin: 1rem 2rem 5rem;
 }
+.card-body p {
+    margin: 2% 0;
+}
 
 /* Pricing */
 #pricing {
-    padding: 5%;
-    text-align: center;
+    padding: 7% 5%;
 }
 #pricing h2{
     font-size: 4.8rem;
@@ -149,81 +168,26 @@ p {
 }
 
 /* Call to action area  */
-#cta {
-    padding: 4% 15%;
-    background: #ff4c68;
-    text-align: center;
-}
 .cta_heading {
     font-size: 4.8rem;
-    color: #fff;
+    color: var(--color-white);
     padding: 0 10%;
     line-height: 1.5;
 }
 
 /* footer */
-#footer {
-    padding: 5% 15%;
-    text-align: center;
-    background-color: #fff;
-}
 .footer_social_icon {
     margin: 2.5rem 0.4rem;
     font-size: 1.4rem;
     display: inline-block;
-    background: #000;
+    background: var(--color-black);
     padding: 1rem;
     border-radius: 50%;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
 }
 .footer_social_icon:hover {
-    background: #ff4c68;
-    color: #fff;
+    background: var(--color-primary);
+    color: var(--color-white);
     transition: 0.3s ease-in-out;
-}
-
-
-.scroll_to_top_btn {
-    display: block;
-}
-
-/* Media */
-@media (max-width: 1030px) {
-    html {
-        font-size: 58.5%;
-    }
-    #title {
-        text-align: center;
-    }
-    .title_image {
-        transform: rotate(0deg);
-        position: static;
-        margin: 10% auto 4%;
-        display: block;
-        width: 40%;
-    }
-    .tiitle_text {
-        padding-top: 3%;
-    }
-    .navbar-nav {
-        background: #eee;
-        padding: 5% 30%;
-        border-radius: 2rem;
-        margin-top: 3%;
-    }
-    .nav-link {
-        color: #000;
-        font-weight: 600;
-        margin: 0.5rem 0;
-        font-size: 3rem;
-    }
-    .navbar-toggler {
-        padding: 1rem 1.5rem;
-        background-color: transparent;
-        border: 2px solid #fff;
-    }
-    .testimonial_heading {
-        font-size: 4rem;
-    } 
 }
