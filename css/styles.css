@@ -191,7 +191,7 @@ p {
 /* Media */
 @media (max-width: 1030px) {
     html {
-        font-size: 50.5%;
+        font-size: 58.5%;
     }
     #title {
         text-align: center;
@@ -216,6 +216,7 @@ p {
         color: #000;
         font-weight: 600;
         margin: 0.5rem 0;
+        font-size: 3rem;
     }
     .navbar-toggler {
         padding: 1rem 1.5rem;
@@ -223,6 +224,6 @@ p {
         border: 2px solid #fff;
     }
     .testimonial_heading {
-        font-size: 4.2rem;
+        font-size: 4rem;
     } 
 }
